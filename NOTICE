@@ -1,0 +1,76 @@
+Learning Convex Decomposition via Feature Fields
+Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This product is licensed under the Apache License, Version 2.0 (see the
+LICENSE file in the root of this repository).
+
+This product includes software developed by third parties. The bundled or
+adapted third-party components, their upstream sources, licenses, and the
+files in this repository in which they appear are listed below. Where an
+upstream project distributes its own NOTICE file, that NOTICE content is
+reproduced or referenced in the corresponding section.
+
+================================================================================
+1. OpenLRM
+================================================================================
+Upstream:  https://github.com/3DTopia/OpenLRM
+License:   Apache License, Version 2.0
+           https://github.com/3DTopia/OpenLRM/blob/main/LICENSE
+Used in:   model/model/triplane.py
+           (adapted from openlrm/models/modeling_lrm.py)
+
+The upstream OpenLRM repository does not distribute a NOTICE file as of
+this writing, so no upstream NOTICE content is propagated here under
+Apache 2.0 §4(d). If a NOTICE file is added upstream in the future, its
+contents must be reproduced in this section.
+
+================================================================================
+2. pytorch-3dunet
+================================================================================
+Upstream:  https://github.com/wolny/pytorch-3dunet
+License:   MIT License
+           https://github.com/wolny/pytorch-3dunet/blob/master/LICENSE
+Copyright: Copyright (c) 2018 Adrian Wolny
+Used in:   model/model/UNet/model.py
+           model/model/UNet/buildingblocks.py
+           (adapted from pytorch3dunet/unet3d/buildingblocks.py)
+
+================================================================================
+3. PVCNN (Point-Voxel CNN)
+================================================================================
+Upstream:  https://github.com/mit-han-lab/pvcnn
+License:   MIT License
+           https://github.com/mit-han-lab/pvcnn/blob/master/LICENSE
+Copyright: Copyright (c) 2019 MIT HAN Lab
+Used in:   model/model/PVCNN/pv_module/
+           model/model/PVCNN/pc_encoder.py
+           model/model/PVCNN/encoder_pc.py (portions)
+
+================================================================================
+4. GenSDF
+================================================================================
+Upstream:  https://github.com/princeton-computational-imaging/gensdf
+License:   MIT License
+           https://github.com/princeton-computational-imaging/gensdf/blob/main/LICENSE
+Copyright: Copyright (c) 2022 Gene Chou
+Used in:   model/model/PVCNN/conv_pointnet.py
+           (the sample_plane_feature function is additionally adapted from
+            the Convolutional Occupancy Networks project,
+            src/conv_onet/models/decoder.py)
+
+================================================================================
+5. NVIDIA Kaolin
+================================================================================
+Upstream:  https://github.com/NVIDIAGameWorks/kaolin
+License:   Apache License, Version 2.0
+           https://github.com/NVIDIAGameWorks/kaolin/blob/master/LICENSE
+Used in:   model/model_trainer.py
+           (a helper adapted from kaolin/ops/mesh/trianglemesh.py)
+
+================================================================================
+
+The full text of the Apache License, Version 2.0 is available at
+http://www.apache.org/licenses/LICENSE-2.0 and in the LICENSE file at the
+root of this repository. The full text of the MIT License for each
+component above is preserved in the header of the corresponding source
+file in this repository.
